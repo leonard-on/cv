@@ -1,0 +1,459 @@
+body {
+    font-family: "Quicksand";
+    text-align: center;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+body::-webkit-scrollbar-track {
+background-color: transparent;
+}
+  
+body::-webkit-scrollbar-thumb {
+background-color: #1b3e9e;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Poppins";
+}
+
+h2{
+    color: #5978ce
+}
+
+/*Title Section*/
+
+#title {
+    background-color: #1b3e9e;
+    text-align: center;
+    height: 100vh;
+    /*background-image: linear-gradient(#182853,#1b3e9e);*/
+}
+
+#title .container-fluid {
+    padding: 3% 15% 10%;
+}
+
+.pre-title {
+    font-family: "Pacifico";
+    color: #5978ce;
+    font-size: 1rem;
+    padding: 2rem 0 0 0rem;
+}
+
+.big-title {
+    font-size: 10rem;
+    line-height: 50%;
+    font-family: 'Sarina', cursive;
+    color: #5978ce;
+    /* ///////////////// */
+    background-image: linear-gradient(
+      -280deg,
+      #1b3e9e 25%,
+      #3d5caf 55%,
+      #2e4fac 60%,
+      #1b3e9e 75%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip  10s linear infinite;
+  }
+  
+  @keyframes textclip {
+    0% {
+    background-position: 0% center;
+    }
+    50% {
+    background-position: 90% center;
+    }
+    100% {
+    background-position: 0% center;
+    }
+}
+
+.btn{
+    margin:5%;
+}
+
+.buttons{
+    margin: 5% 0;
+}
+
+/* NavBar Section */
+
+.navbar {
+    font-size: 1rem;
+    padding: 0.5rem 2rem 0.5rem;
+}
+
+.navbar-brand{
+    /*il mio nome nella navbar*/
+    font-size: 0.5rem;
+    color: #325ac9;
+}
+
+.toggler-icon {
+    color: #325ac9;
+}
+
+.nav-link{
+    /*cioè le scritte contact Me skills etc*/
+    color: #496ac7;
+}
+.nav-item {
+    padding: 0 0.8rem;
+    text-align: right;
+}
+
+.nav-item :hover{
+    color: #375ec9e5;
+}
+
+.img-logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* Me Section */
+
+#me-section {
+    padding: 5% 0 5%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.text-div{
+    text-align: center;
+    padding: 2% 18%;
+    color: #77819b
+}
+
+.text-div h2{
+    color: #333;
+    font-family: "Quicksand";
+    font-size: 1rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-div h2 span {
+    font-size: 1rem;
+    margin-right: 20%;
+    color: #496ac7;
+  }
+
+.message {
+    background-color: #496ac7;
+    color: #fff;
+    display: block;
+    font-weight: 1000;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 48%;
+    animation: openclose 10s ease-in-out infinite;
+  }
+
+  @keyframes openclose {
+    0% {
+      top: 0rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 110px;
+    }
+    30% {
+      top: 0rem;
+      width: 110px;
+    }
+    33% {
+      top: 0rem;
+      width: 0;
+    }
+    35% {
+      top: 0rem;
+      width: 0;
+    }
+    38% {
+      top: -1.5rem;
+    }
+    48% {
+      top: -1.5em;
+      width: 120px;
+    }
+    62% {
+      top: -1.5rem;
+      width: 120px;
+    }
+    66% {
+      top: -1.5rem;
+      width: 0;
+    }
+    71% {
+      top: -3rem;
+      width: 0;
+    }
+    86% {
+      top: -3rem;
+      width: 145px;
+    }
+    95% {
+      top: -3rem;
+      width: 145px;
+    }
+    98% {
+      top: -3rem;
+      width: 0;
+      
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+
+/* Skills Section */
+
+#skills-section {
+    padding: 5% 0 5%;
+    background-color: #496ac7;
+    height: 100%;
+
+}
+
+#skills-section h2{
+    color: #fff;
+}
+
+
+.skills {
+    width: 60%;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+.skills li {
+    color:#7893db;
+    margin: 20px 0 5px;
+    padding: 10px;
+    list-style-type:none;
+}
+
+.bar {
+    background: #3e5891;
+    display: block;
+    height:20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px #2d3d69, 0 1px 2px #344675;
+    transition: all 0.3s cubic-brezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    border-radius:10px;
+    background: linear-gradient(135deg, rgb(250, 33, 52) 0%, rgba(252, 103, 103, 1) 100%);
+}
+
+/*SOFT SKILLS*/
+.ProblemSolving{
+    width: 92%;
+    animation: ProblemSolving 3s;
+}
+
+.Flessibilità{
+    width: 85%;
+    animation: Flessibilità 3s;
+}
+
+.Affidabilità{
+    width: 95%;
+    animation: Affidabilità 3s;
+}
+
+.Organizzazione{
+    width: 87%;
+    animation: Organizzazione 3s;
+}
+
+.TeamWorking{
+    width: 91%;
+    animation: TeamWorking 3s;
+}
+
+@keyframes ProblemSolving{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 92%
+    }
+}
+@keyframes Flessibilità{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 85%
+    }
+}
+@keyframes Affidabilità{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 95%
+    }
+}
+@keyframes Organizzazione{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 87%
+    }
+}
+@keyframes TeamWorking{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 91%
+    }
+}
+
+/*HARDn SKILLS*/
+.iLearnTextSkills{
+    color: #fff;
+    margin-bottom: 10%;
+}
+
+
+
+/* Education Section */
+
+#study-section {
+    padding: 5% 0 5%;
+    background-color: #fff;
+}
+
+.feature-title {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    }
+
+.education{
+    margin: 10% 15%;
+}
+
+.University{
+    color: #607bc7;
+}
+    
+
+
+
+/* Contact Section*/
+
+#contact {
+    padding: 5% 0 5%;
+    margin: 0;
+    background: #496ac7;
+    background: linear-gradient(#496ac7 0%,#2b4899 100%);
+}
+
+#contact h2{
+    color: #fff;
+}
+
+#contact p{
+    color: #fff;
+}
+
+
+
+
+/* Footer Section */
+#footer {
+    background-color: #2b4899;
+    padding: 2% 15% 2% 15%;
+    color: #5978ce;
+}
+
+.brand {
+    padding: 3%;
+    color: #5978ce;
+}
+
+
+
+@media  (max-width: 1080px)  {
+
+    .big-title{
+        font-size: 4.5rem;
+        line-height: 4rem;
+    }
+    
+    .navbar {
+        font-size: 1rem;
+        padding: 0.1rem 1rem 0.1rem;
+    }
+}
+
+
+@media  (max-width: 760px)  {
+
+    .big-title{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    .navbar {
+        font-size: 1rem;
+        padding: 0.1rem 1rem 0.1rem;
+    }
+}
+
+@media  (max-width: 280px)  {
+
+    .big-title{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
